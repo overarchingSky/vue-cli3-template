@@ -1,0 +1,37 @@
+/*
+ * base - 基础样式
+ */
+@import './var.less';
+
+input:-webkit-autofill {
+  //   -webkit-box-shadow: 0 0 0px 1000px #fefefe inset !important;
+}
+input {
+  text-indent: 0.05rem;
+}
+body {
+  font-family: "Microsoft YaHei", "微软雅黑", "Avenir", Helvetica, Arial;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 0.28rem !important;
+  background-color: #f7f7f7;
+  color:@fontColor;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+input::-webkit-input-placeholder,
+.placeholder {
+  color: #aab2bd;
+}
+
+img:not([src]):not([srcset]){
+  opacity: 0.1;
+  background-color: #999;
+}

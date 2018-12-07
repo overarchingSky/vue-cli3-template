@@ -1,0 +1,7 @@
+#dev环境配置
+
+#接口版本别名、标志
+VUE_APP_APINAME=dev
+
+#接口地址
+VUE_APP_API=https://dev-services2.wingedcare.com

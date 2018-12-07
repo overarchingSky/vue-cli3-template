@@ -1,0 +1,7 @@
+#后端开发人员使用的配置
+
+#接口版本别名、标志
+VUE_APP_APINAME=backEnd
+
+#接口地址
+VUE_APP_API=http://frontend-dev:8080

@@ -1,0 +1,14 @@
+{
+  "name": "vue-cli-plugin-wingedcare-template-auth",
+  "version": "0.0.1",
+  "description": "wingedcare-template模板auth模块",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tianlong",
+  "license": "ISC",
+  "devDependencies": {
+    "chilk": "^1.0.0"
+  }
+}

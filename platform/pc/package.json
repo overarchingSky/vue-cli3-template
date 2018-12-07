@@ -1,0 +1,17 @@
+{
+  "name": "vue-cli-plugin-wingedcare-template-pc",
+  "version": "0.0.7",
+  "description": "wingedcare-template模板pc化（element-ui）插件",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wingedcare",
+    "pc",
+    "vue-cli",
+    "plugin"
+  ],
+  "author": "tianlong",
+  "license": "ISC"
+}

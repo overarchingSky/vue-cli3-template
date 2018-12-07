@@ -1,0 +1,13 @@
+#项目配置文件
+
+#项目名称，会显示在html的title里
+VUE_APP_NAME=wingedcare-vue-template
+
+#请求是否带上cookie
+VUE_APP_WITHCREDENTIALS=true
+
+#资源解析接口/地址
+#私有地址：
+VUE_APP_PRIVATE_RESOURCES=/messages/api/private-resource/get?download=false&resourcePath=
+#公开地址
+VUE_APP_PUBLIC_RESOURCES=/messages/api/public/public-resource/get?download=false&resourcePath=

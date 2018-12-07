@@ -1,0 +1,21 @@
+{
+  "name": "vue-cli-plugin-helper-utils",
+  "version": "0.0.1",
+  "description": "vue-cli3创建插件辅助工具",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue-cli",
+    "plugin",
+    "helper-uitils",
+    "vue-cli-helper",
+    "vue-cli-helper-utils"
+  ],
+  "author": "tianlong",
+  "license": "ISC"
+}

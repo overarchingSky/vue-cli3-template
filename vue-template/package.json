@@ -1,0 +1,20 @@
+{
+  "name": "vue-cli-plugin-wingedcare-template",
+  "version": "0.0.1",
+  "description": "vue项目模板插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue-cli",
+    "plugin",
+    "wingedcare",
+    "wingedcare-template"
+  ],
+  "devDependencies": {
+    "vue-cli-plugin-helper-utils":"^0.0.1"
+  },
+  "author": "tianlong",
+  "license": "ISC"
+}

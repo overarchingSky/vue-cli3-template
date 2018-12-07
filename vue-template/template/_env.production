@@ -1,0 +1,8 @@
+#生产环境配置
+
+#接口版本别名、标志
+VUE_APP_APINAME=prod
+
+#接口地址 UAT相当于beta版本
+VUE_APP_API=
+VUE_APP_UAT_API=

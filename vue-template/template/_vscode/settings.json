@@ -1,0 +1,48 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+	// "editor.wordWrap": "on",
+	// "files.exclude": {
+	// 		"**/.git": true,
+	// 		"**/.svn": true,
+	// 		"**/.hg": true,
+	// 		"**/CVS": true,
+	// 		"**/.DS_Store": true,
+	// 		"**/node_modules": true,
+	// 		"storage": true,
+	// 		"public/js": true,
+	// 		"public/css": true
+	// },
+	// "files.watcherExclude": {
+	// 		"**/.git/objects/**": true,
+	// 		"**/node_modules/**": true,
+	// 		"**/logs/**": true,
+	// 		"vendor/**": true
+	// },
+	// "editor.renderWhitespace": "boundary",
+	// "editor.tabSize": 4,
+	// "editor.insertSpaces": false,
+	// "[javascript]": {
+	// 	"editor.tabSize": 2
+	// },
+	// "[vue]": {
+	// 	"editor.tabSize": 2
+	// },
+	// "editor.formatOnSave": false,
+    // // Enable per-language
+    // "[javascript]": {
+    //     "editor.formatOnSave": false
+    // },
+    "terminal.integrated.rendererType": "dom",
+	//"window.zoomLevel": 0,
+	"files.autoSave":"off",
+	"eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.run": "onType",
+    "eslint.options": {
+        "extensions": [".js",".vue"]
+    },
+    "eslint.validate": [
+		"javascript",
+        { "language": "vue", "autoFix": true }
+    ]
+}

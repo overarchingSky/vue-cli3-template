@@ -1,0 +1,17 @@
+{
+  "name": "vue-cli-plugin-wingedcare-template-mobile",
+  "version": "0.0.16",
+  "description": "wingedcare-template模板移动化插件",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "plugin",
+    "vue-cli",
+    "wingedcare",
+    "mobile"
+  ],
+  "author": "tianlong",
+  "license": "ISC"
+}

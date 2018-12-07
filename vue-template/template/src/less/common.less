@@ -1,0 +1,126 @@
+/**
+ * commone - 用于放置项目中的共用样式
+ */
+//公共样式问及看
+@import "./var.less";
+.border {
+  border: 1px solid @boderColor;
+}
+//使子代元素垂直居中
+.vertical-middle {
+  height: 100%;
+  &:before {
+    content: "";
+    display: inline-block;
+    visibility: hidden;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+  }
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+//使子代元素水平居中
+.center {
+  text-align: center;
+  > * {
+    display: inline-block;
+  }
+}
+//过渡动画
+.animate {
+  transition: all 0.3s ease-out;
+}
+
+//清楚浮动
+.clearfix {
+  zoom: 1;
+  &:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    clear: both;
+  }
+}
+
+//阴影
+.shadow {
+  box-shadow: 0 0 5px 1px #ccc;
+}
+
+//radius
+.radius {
+  border-radius: 0.05rem;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.line {
+  &:after {
+    content: "";
+    width: 100%;
+    display: block;
+    height: 0;
+    border-top: 1px solid #eee;
+    transform: scaleY(0.5);
+  }
+}
+
+.pd-vertical {
+  padding-top: @pd;
+  padding-bottom: @pd;
+}
+
+.pd-horizontal {
+  padding-left: @pd;
+  padding-right: @pd;
+}
+
+.pd {
+  padding: @pd;
+}
+
+.section + .section {
+  margin-top: 0.2rem;
+}
+
+.wt-loading {
+  background: url("/static/images/loading.gif") no-repeat center center;
+  background-size: 20px 20px;
+}
+
+.submit{
+  width:70%;
+  margin:0.5rem auto;
+}
+
+.error {
+  color: red;
+}
+
+.theme-bg {
+  background-color: @themeColor!important;
+}
+
+.theme-color {
+  color: @themeColor!important;
+}
+
+.theme-border-color{
+  border-color:@themeColor!important;
+}
+
+.line-through{
+  text-decoration: line-through;
+  color:#777;
+}
+
+.form__item + .form__item {
+  border-top: 1px solid #eee;
+}
