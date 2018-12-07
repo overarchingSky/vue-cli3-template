@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-wingedcare-template-wechat",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "vue-cli-plugin-wingedcare-template 微信化插件",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,8 @@
     "plugin"
   ],
   "author": "tianlong",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vue-cli-plugin-helper-utils":"^0.0.1"
+  }
 }

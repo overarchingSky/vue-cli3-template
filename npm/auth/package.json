@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-wingedcare-template-auth",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "wingedcare-template模板auth模块",
   "main": "index.js",
   "scripts": {

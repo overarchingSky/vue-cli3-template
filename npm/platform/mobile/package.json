@@ -13,5 +13,8 @@
     "mobile"
   ],
   "author": "tianlong",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "vue-cli-plugin-helper-utils":"^0.0.1"
+  }
 }

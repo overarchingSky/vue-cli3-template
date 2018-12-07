@@ -35,7 +35,7 @@ module.exports = (api, options, rootOptions) => {
     api.render('./template',options)
     if(options.useAuth !== false){
       //安装vue-auth插件
-      plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.1")
+      plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.2")
     }
     
     switch(options.platform){
@@ -45,7 +45,7 @@ module.exports = (api, options, rootOptions) => {
         break;
       case 'wechat':
         //这里没有使用break; 是为了同时安装wingedcarea-vue-template-wechat和wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.7")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.9")
       case 'mobile':
         //安装wingedcarea-vue-template-mobile插件
         plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.15")
