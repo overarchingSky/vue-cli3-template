@@ -38,7 +38,7 @@ async function pullComp () {
     }
     shell.exec(`cd ./src/components/common && git remote rm origin`)
     shell.exec(`cd ./src/components/common && git remote add -f origin ${repository} && git config core.sparsecheckout true && echo "${dir}" >> .git/info/sparse-checkout && git checkout master`, function (data) {
-      console.log(`\n拉取组件${dir}成功！"\n`)
+      console.log(`\n拉取${dir}成功！"\n`)
     })
   })
 }

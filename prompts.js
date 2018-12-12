@@ -22,6 +22,7 @@ module.exports = [
       type: "confirm",
       name: "useAuth",
       message: "是否使用权限模块（vue-cli-plugin-wingedcare-template-auth插件）?",
+      default:true,
       when:data => {
         //微信平台，强制使用vue-auth
         return data.platform !== 'wechat'
@@ -31,10 +32,12 @@ module.exports = [
       type: "confirm",
       name: "theme",
       message: "是否使用主题?",
+      default:false
     },
     {
       type: "confirm",
       name: "useSparseCheckout",
       message: "是否使用git按需克隆?（用于方便的调试、修改组件库）",
+      default:true
     }
   ]
