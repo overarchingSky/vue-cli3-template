@@ -1,0 +1,23 @@
+{
+  "name": "vue-cli-plugin-wingedcare-template-sparse-checkout",
+  "version": "0.0.4",
+  "description": "按需clone插件",
+  "main": "generator.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overarchingSky/vue-cli3-template/tree/master/npm/sparse-checkout"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "git-sparse",
+    "wingedcare",
+    "template"
+  ],
+  "author": "tianlong",
+  "license": "ISC",
+  "devDependencies": {
+    "chilk": "^1.0.0"
+  }
+}

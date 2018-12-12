@@ -40,7 +40,7 @@ module.exports = (api, options, rootOptions) => {
     
     if(options.useSparseCheckout){
       //集成sparse-checkout工具到npm script
-      plugin.invoke('vue-cli-plugin-wingedcare-template-sparse-checkout','^0.0.3')
+      plugin.invoke('vue-cli-plugin-wingedcare-template-sparse-checkout','^0.0.4')
     }
 
     switch(options.platform){
