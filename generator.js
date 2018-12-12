@@ -19,8 +19,8 @@ module.exports = (api, options, rootOptions) => {
         "new:comp": "node scripts/new-comp/index.js",
         "dev-local": "vue-cli-service serve --model backEnd",
         "build-local": "vue-cli-service build --model backEnd",
-        "build-dev": "vue-cli-service build --model development",
-        "build-prod": "vue-cli-service build --model production",
+        "build-dev": "vue-cli-service build --model development --modern",
+        "build-prod": "vue-cli-service build --model production --modern",
       },
       dependencies:{
         "axios": "^0.16.2",
@@ -38,6 +38,16 @@ module.exports = (api, options, rootOptions) => {
     
     // 复制并用 ejs 渲染 `./template` 内所有的文件
     api.render('./template',options)
+
+
+    // 删除文件  
+    fs.unlink('router.js',function(error){
+      if(error){
+          throw error
+      }
+      console.log('尝试删除router.js');
+    })
+
     if(options.useAuth !== false){
       //安装vue-auth插件
       plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.3")

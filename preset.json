@@ -10,7 +10,7 @@
         },
         "vue-cli-plugin-helper-utils":"^0.0.1"
     },
-    "router": true,
+    "router": false,
     "routerHistoryMode": true,
     "vuex": true,
     "cssPreprocessor": "less"

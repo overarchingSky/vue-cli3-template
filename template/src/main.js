@@ -35,7 +35,7 @@ Vue.axios.defaults.withCredentials = process.env.VUE_APP_WITHCREDENTIALS
 
 Vue.config.productionTip = false
 
-new Vue({
+window.vm = new Vue({
   router,
   store,
   render: h => h(App)
