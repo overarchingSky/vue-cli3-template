@@ -8,12 +8,12 @@ let router = new Router({
   mode: 'history',
   routes: [
     <% if(platform == 'wechat') { %>...authRedirect,<% } %>
-    // {
-    //   path: "/login",
-    //   name: "login",
-    //   component: resolve => require(["pages/login"], resolve),
-    //   meta: { auth: false, view: "defaultView" }
-    // }
+    {
+      path: "/home",
+      name: "home",
+      component: resolve => require(["pages/Home"], resolve),
+      meta: { auth: false, view: "defaultView" }
+    }
   ]
 })
 
