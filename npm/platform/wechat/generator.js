@@ -1,5 +1,5 @@
 chalk = require('chalk')
-const {inject} = require('vue-cli-plugin-helper-utils')
+const {inject} = require('vue-cli-helper-utils')
 module.exports = async (api, options, rootOptions) => {  
     api.extendPackage({
       devDependencies:{

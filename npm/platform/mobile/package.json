@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-wingedcare-template-mobile",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "wingedcare-template模板移动化插件",
   "main": "generator.js",
   "repository": {
@@ -19,6 +19,6 @@
   "author": "tianlong",
   "license": "ISC",
   "devDependencies": {
-    "vue-cli-plugin-helper-utils":"^0.0.1"
+    "vue-cli-helper-utils":"^0.0.1"
   }
 }

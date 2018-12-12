@@ -1,6 +1,6 @@
 {
-  "name": "vue-cli-plugin-helper-utils",
-  "version": "0.0.2",
+  "name": "vue-cli-helper-utils",
+  "version": "0.0.1",
   "description": "vue-cli3创建插件辅助工具",
   "main": "index.js",
   "repository": {

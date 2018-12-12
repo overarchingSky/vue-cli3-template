@@ -16,6 +16,7 @@ module.exports = (api, options, rootOptions) => {
     // 修改 `package.json` 里的字段
     api.extendPackage({
       scripts: {
+        "new:comp": "node scripts/new-comp/index.js",
         "dev-local": "vue-cli-service serve --model backEnd",
         "build-local": "vue-cli-service build --model backEnd",
         "build-dev": "vue-cli-service build --model development",
@@ -28,6 +29,10 @@ module.exports = (api, options, rootOptions) => {
         "vconsole": "^3.2.0",
         "vee-validate": "2.1.0-beta.5",
         "vue-wechat-title": "^2.0.4"
+      },
+      devDependencies:{
+        "ora": "^3.0.0",
+        "shelljs": "^0.8.3"
       }
     })
     
@@ -46,14 +51,14 @@ module.exports = (api, options, rootOptions) => {
     switch(options.platform){
       case 'pc':
         //安装wingedcarea-vue-template-pc插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-pc',"^0.0.8")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-pc',"^0.0.10")
         break;
       case 'wechat':
         //这里没有使用break; 是为了同时安装wingedcarea-vue-template-wechat和wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.10")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.12")
       case 'mobile':
         //安装wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.18")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.19")
         break;
     }
   }

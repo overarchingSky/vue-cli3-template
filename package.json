@@ -13,7 +13,7 @@
     "wingedcare-template"
   ],
   "devDependencies": {
-    "vue-cli-plugin-helper-utils":"^0.0.1"
+    "vue-cli-helper-utils":"^0.0.1"
   },
   "author": "tianlong",
   "license": "ISC"

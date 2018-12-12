@@ -1,5 +1,5 @@
 chalk = require('chalk')
-const {pluginTool} = require('vue-cli-plugin-helper-utils')
+const {pluginTool} = require('vue-cli-helper-utils')
 module.exports = async (api, options, rootOptions) => {  
     let plugin = new pluginTool(api,{...options,
       /* 以下参数是供cube-ui插件使用 */
