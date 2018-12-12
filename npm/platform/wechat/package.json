@@ -1,8 +1,12 @@
 {
   "name": "vue-cli-plugin-wingedcare-template-wechat",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "vue-cli-plugin-wingedcare-template 微信化插件",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overarchingSky/vue-cli3-template/tree/master/npm/platform/wechat"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

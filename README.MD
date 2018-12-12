@@ -19,7 +19,6 @@
 * 增加src/utils/typeof.js用于判断js变量类型
 * 增加src/utils/url.js处理url的工具
 
-* 修改src/views目录名称为src/pages
 * 修改App.vue
 * 修改main.js
 

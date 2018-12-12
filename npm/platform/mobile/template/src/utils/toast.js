@@ -5,7 +5,7 @@ let time = 3000; //toast默认显示时间
 let tip = null; //所有toast都维护在tip这一个变量上
 
 //toast
-function info(params = { txt, time }) {
+function info(params = "") {
   if (_.isObject(params)) {
     tip = Vue.prototype.$createToast
       .call(Vue, {

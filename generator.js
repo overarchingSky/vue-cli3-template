@@ -35,22 +35,26 @@ module.exports = (api, options, rootOptions) => {
     api.render('./template',options)
     if(options.useAuth !== false){
       //安装vue-auth插件
-      plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.2")
+      plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.3")
     }
     
+    if(options.useSparseCheckout){
+      //集成sparse-checkout工具到npm script
+      plugin.invoke('vue-cli-plugin-wingedcare-template-sparse-checkout','^0.0.3')
+    }
+
     switch(options.platform){
       case 'pc':
         //安装wingedcarea-vue-template-pc插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-pc',"^0.0.7")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-pc',"^0.0.8")
         break;
       case 'wechat':
         //这里没有使用break; 是为了同时安装wingedcarea-vue-template-wechat和wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.9")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.10")
       case 'mobile':
         //安装wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.15")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.18")
         break;
-      
     }
   }
 

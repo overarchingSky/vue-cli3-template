@@ -1,8 +1,12 @@
 {
   "name": "vue-cli-plugin-helper-utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "vue-cli3创建插件辅助工具",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overarchingSky/vue-cli3-template/tree/master/npm/utils"
+  },
   "directories": {
     "lib": "lib"
   },

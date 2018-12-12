@@ -1,7 +1,11 @@
 {
   "name": "vue-cli-plugin-wingedcare-template-auth",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "wingedcare-template模板auth模块",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overarchingSky/vue-cli3-template/tree/master/npm/auth"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

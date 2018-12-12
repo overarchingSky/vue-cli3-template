@@ -31,5 +31,10 @@ module.exports = [
       type: "confirm",
       name: "theme",
       message: "是否使用主题?",
+    },
+    {
+      type: "confirm",
+      name: "useSparseCheckout",
+      message: "是否使用git按需克隆?（用于方便的调试、修改组件库）",
     }
   ]
