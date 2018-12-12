@@ -9,7 +9,7 @@ import './less'
 import prototypes from './prototype'
 import _typeof from '@/utils/typeof.js' // 将类型判定，挂载到全局_上
 // 引入全局组件的js
-import './module-layout'
+import './register-global-components'
 import '@/utils/toast'
 import '@/utils/dialog'
 window._ = _typeof
