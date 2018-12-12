@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-wingedcare-template-wechat",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "vue-cli-plugin-wingedcare-template 微信化插件",
   "main": "index.js",
   "repository": {

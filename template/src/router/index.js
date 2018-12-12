@@ -11,7 +11,7 @@ let router = new Router({
     {
       path: "/home",
       name: "home",
-      component: resolve => require(["pages/Home"], resolve),
+      component: resolve => require(["views/Home"], resolve),
       meta: { auth: false, view: "defaultView" }
     }
   ]

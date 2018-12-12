@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" v-wechat-title="$route.meta.title">
     <component :is="curView" v-if="$auth.ready()"></component>
   </div>
 </template>

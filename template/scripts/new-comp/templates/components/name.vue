@@ -4,14 +4,14 @@
 
 <script>
 // 组件class前缀
-const prefixCls = '{{__component_class_name__}}';
+const prefixCls = '{{__component_class_name__}}'
 
 export default {
   name: '{{__component_name__}}',
   computed: {
-    classes() {
-      return `${prefixCls}`;
-    },
-  },
-};
+    classes () {
+      return `${prefixCls}`
+    }
+  }
+}
 </script>
