@@ -10,7 +10,7 @@ childProcess.spawnSync('cnpm',['install'],{
 })
 //子进程end
 
-const {pluginTool} = require('vue-cli-plugin-helper-utils')
+const {pluginTool} = require('vue-cli-helper-utils')
 module.exports = (api, options, rootOptions) => {
     let plugin = new pluginTool(api,options,rootOptions)
     // 修改 `package.json` 里的字段

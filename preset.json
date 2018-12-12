@@ -7,8 +7,7 @@
             "lintOn": [
             "save"
             ]
-        },
-        "vue-cli-plugin-helper-utils":"^0.0.1"
+        }
     },
     "router": false,
     "routerHistoryMode": true,
