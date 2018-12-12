@@ -1,5 +1,3 @@
-// const pluginTool = require('./utils/plugin-tool')
-// const inject = require('./utils/inject')
 /**
  * 由于作为vue-cli3 preset，package.json不会被自动读取并执行，现在用子进程手动读取
  */
@@ -32,7 +30,8 @@ module.exports = (api, options, rootOptions) => {
       },
       devDependencies:{
         "ora": "^3.0.0",
-        "shelljs": "^0.8.3"
+        "shelljs": "^0.8.3",
+        "vue-cli-helper-utils": "^0.0.1"
       }
     })
     

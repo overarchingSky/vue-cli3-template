@@ -13,8 +13,6 @@ let prompts = [{
   default: 'test/ssr'
 }]
 
-console.log('+++++repository', repository)
-
 if (!repository) {
   prompts.unshift({
     name: 'repository',
