@@ -39,15 +39,6 @@ module.exports = (api, options, rootOptions) => {
     // 复制并用 ejs 渲染 `./template` 内所有的文件
     api.render('./template',options)
 
-
-    // 删除文件  
-    fs.unlink('router.js',function(error){
-      if(error){
-          throw error
-      }
-      console.log('尝试删除router.js');
-    })
-
     if(options.useAuth !== false){
       //安装vue-auth插件
       plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.3")
