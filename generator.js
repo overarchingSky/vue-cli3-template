@@ -25,9 +25,7 @@ module.exports = (api, options, rootOptions) => {
         "vue-axios": "^2.0.2",
         "fecha": "^2.3.2",
         "vue-router": "^3.0.2",
-        // "vconsole": "^3.2.0",
-        // "vee-validate": "2.1.0-beta.5",
-        "vue-wechat-title": "^2.0.4"
+        "vuex": "^3.0.1"
       },
       devDependencies:{
         "ora": "^3.0.0",
@@ -59,7 +57,7 @@ module.exports = (api, options, rootOptions) => {
         plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.13")
       case 'mobile':
         //安装wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.22")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.23")
         break;
     }
   }

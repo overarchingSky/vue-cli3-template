@@ -95,7 +95,7 @@ export function loading (message = '') {
 
     loading.target.show()
     // 提供两个方法关闭loading
-    loading.close = function() {
+    loading.close = function () {
       this.target.hide()
     }
     loading.hide = loading.close

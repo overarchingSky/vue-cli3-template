@@ -85,7 +85,7 @@ function createTemplate (name, needConfig) {
       distFiles.index,
       replaceCompName('index', name).replace(
         /\{\{__component_name__\}\}/g,
-        nameFormat(fullName)
+        fullName
       )
     )
 

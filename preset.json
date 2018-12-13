@@ -11,6 +11,6 @@
     },
     "router": false,
     "routerHistoryMode": true,
-    "vuex": true,
+    "vuex": false,
     "cssPreprocessor": "less"
 }
