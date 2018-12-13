@@ -17,6 +17,8 @@ module.exports = async (api, options, rootOptions) => {
         "vee-validate": "2.1.0-beta.5",
       }
     })
+    // 内联import语句
+    api.injectImports('src/main.js', [`import '@/utils/toast'`, `import '@/utils/dialog'`, `import "@/utils/validate";`])
 
     plugin.add('@vue/cli-plugin-cube-ui')
     await api.render('./template')

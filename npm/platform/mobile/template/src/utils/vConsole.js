@@ -1,5 +1,5 @@
 // 异步按需引入vConsole，以减小生产环境的js包体积
-import { toast } from 'utils/toast'
+import { toast } from '@/utils/toast'
 export default {
   Contractor: null,
   vm: null,
