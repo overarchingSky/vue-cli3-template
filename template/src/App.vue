@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <component :is="curView" v-if="$auth.ready()"></component>
+    <component :is="curView" <% if(useAuth) { %>v-if="$auth.ready()"<% } %>></component>
   </div>
 </template>
 
