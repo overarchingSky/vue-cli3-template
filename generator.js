@@ -59,7 +59,7 @@ module.exports = (api, options, rootOptions) => {
         plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.13")
       case 'mobile':
         //安装wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.20")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.21")
         break;
     }
   }
