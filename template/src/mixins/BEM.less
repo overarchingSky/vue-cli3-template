@@ -1,0 +1,20 @@
+@elementSeparator: '__';
+@modifierSeparator: '--';
+
+.b(@blockName, @content) {
+  .@{blockName} {
+    @content();
+  }
+}
+
+.e(@elementName, @content) {
+    &@{elementSeparator}@{elementName} {
+      @content();
+    }
+  }
+
+.m(@modifierName, @content) {
+  &@{modifierSeparator}@{modifierName} {
+    @content();
+  }
+}

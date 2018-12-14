@@ -1,8 +1,6 @@
 <template>
-		<div class="app-main">
-				<div class="layout main">
-						<vue-view style="height:100%;overflow-y:auto;-webkit-overflow-scrolling: touch;"></vue-view>
-				</div>
+		<div :class="$style['app-main']">
+			<% if(useAuth) { %><vue-view :class="$style['app-main__view']"></vue-view><% }else{ %><router-view :class="[$style['app-main__view'],'scroll']"></router-view><% } %>
 		</div>
 </template>
 <script>
@@ -16,10 +14,10 @@ export default {
   }
 }
 </script>
-<style lang="less">
+<style modules lang="less">
 .app-main {
 		height: 100%;
-		.main {
+		&__view {
 			height: 100%;
 		}
 }

@@ -16,5 +16,13 @@ module.exports = {
                 icon: resolve("src/assets/icon"),
             }
         }
+    },
+    css:{
+        loaderOptions:{
+            // [name,local,hash,path]
+            css: {
+                localIdentName: '[local]-[hash]'
+            }
+        }
     }
 }

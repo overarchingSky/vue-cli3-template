@@ -18,6 +18,8 @@
 * 增加src/utils/date.js用于日期时间的格式化
 * 增加src/utils/typeof.js用于判断js变量类型
 * 增加src/utils/url.js处理url的工具
+* 添加src/mixins/BEM.less
+* 添加src/mixins/emmiter.js用于触发隔代组件事件
 
 * 修改App.vue
 * 修改main.js

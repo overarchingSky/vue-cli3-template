@@ -30,6 +30,12 @@ module.exports = [
     },
     {
       type: "confirm",
+      name: "useWtUi",
+      message: "是否使用wt-ui(公司内部组件库)?",
+      default: true,
+    },
+    {
+      type: "confirm",
       name: "theme",
       message: "是否使用主题?",
       default: false,

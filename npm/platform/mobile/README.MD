@@ -8,3 +8,4 @@
 * 添加src/utils/toast.js，基于cube-ui的移动端提示框
 * 添加src/utils/vConsile.js，移动端调试工具
 * 添加src/platform代码
+* 添加src/mixins/form

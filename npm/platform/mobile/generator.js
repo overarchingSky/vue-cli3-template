@@ -5,9 +5,9 @@ module.exports = async (api, options, rootOptions) => {
       /* 以下参数是供cube-ui插件使用 */
       postCompile:true,
       importType:'partly',
-      rem:true,
+      rem:false,
       amfeFlexible:false,
-      vw:false
+      vw:true
     },rootOptions)
 
     // 修改 `package.json` 里的字段
