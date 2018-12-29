@@ -20,6 +20,7 @@
 * 增加src/utils/url.js处理url的工具
 * 添加src/mixins/BEM.less
 * 添加src/mixins/emmiter.js用于触发隔代组件事件
+* 添加src/template通用模板组件，如正在开发中等
 
 * 修改App.vue
 * 修改main.js

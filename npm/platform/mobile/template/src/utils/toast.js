@@ -85,11 +85,12 @@ toast.success = success
  */
 export function loading (message = '') {
   if (_.isString(message)) {
-    tip && tip.remove() // 清除之前toast的实例
-    loading.target && loading.target.hide()
+    //tip && tip.remove() // 清除之前toast的实例
+    //loading.target && loading.target.hide()
     loading.target = Vue.prototype.$createToast.call(Vue, {
       txt: message,
       type: 'loading',
+      mask: true,
       time: 0 // 设置为0，不自动关闭
     })
 

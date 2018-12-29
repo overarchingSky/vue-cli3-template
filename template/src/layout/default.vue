@@ -14,7 +14,7 @@ export default {
   }
 }
 </script>
-<style modules lang="less">
+<style module lang="less">
 .app-main {
 		height: 100%;
 		&__view {

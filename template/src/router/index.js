@@ -1,15 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-<% if(platform == 'wechat') { %>import authRedirect from './authRedirect'<% } %>
 Vue.use(Router)
 
 // 定义路由规则
 let router = new Router({
   mode: 'history',
   routes: [
-    <% if(platform == 'wechat') { %>...authRedirect,<% } %>
     {
-      path: "/home",
+      path: "/",
       name: "home",
       component: resolve => require(["views/Home"], resolve),
       meta: { auth: false, view: "defaultView" }

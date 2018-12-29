@@ -8,8 +8,9 @@ module.exports = async (api, options, rootOptions) => {
       }
     })
     api.postProcessFiles(files => {
-      inject('src/main.js',`Vue.use(require('vue-wechat-title'))`,files)
+      inject('src/main.js',[`// 微信授权、登录`,`import '@/router/authorization.js'`,`Vue.use(require('vue-wechat-title'))`],files)
     })
+
     await api.render('./template')
     console.log(chalk.green('✔') + '  微信化完毕')
   }

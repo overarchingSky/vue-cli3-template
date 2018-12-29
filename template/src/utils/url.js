@@ -3,3 +3,7 @@ export function join (...urls) {
     return url.replace(/(^\/)|(\/$)/g, '')
   }).join('/')
 }
+
+export default {
+  join
+}

@@ -30,6 +30,7 @@ module.exports = class plugin {
     this._install(name, (cliPluginName,paramsArr,cwd) => {
       this.api.onCreateComplete(() => {
         let params = propmt ? [] : paramsArr
+        console.log('params',params)
         childProcess.spawnSync('vue',['add', cliPluginName, ...params],{
           stdio: 'inherit',
           cwd
@@ -52,6 +53,7 @@ module.exports = class plugin {
       })
       this.api.onCreateComplete(() => {
         let params = propmt ? [] : paramsArr
+        console.log('params',params)
         childProcess.spawnSync('vue',['invoke', cliPluginName,...params],{
           stdio: 'inherit',
           cwd

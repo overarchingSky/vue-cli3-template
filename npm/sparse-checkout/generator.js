@@ -5,7 +5,7 @@ module.exports = async (api, options, rootOptions) => {
         "shelljs": "^0.8.3"
       },
       scripts:{
-        "pull:comp": "node ./scripts/git-pull-comp"
+        "pull:comp": "node ./scripts/git-pull-comp/index.js"
       }
     })
     await api.render('./template',options)

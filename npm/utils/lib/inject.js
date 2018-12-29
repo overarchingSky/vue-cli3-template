@@ -11,12 +11,26 @@
  *    inject('src/main.js',['import elementUi from "element-ui"',***],files)
  * })
  */
-module.exports = function inject (filePath,ctx, files) {
+module.exports = function inject (filePath,ctx, files, position='afterImport') {
     const fileCtx = files[filePath]
     if (fileCtx) {
       // inject codeing into document
       const lines = fileCtx.split(/\r?\n/g).reverse()
-      const lastImportIndex = lines.findIndex(line => line.match(/^import/))
+      let lastImportIndex
+      if(position == 'afterImport'){
+        lastImportIndex = lines.findIndex(line => line.match(/^import/))
+      }
+      switch(position){
+          case 'afterImport':
+          lastImportIndex = lines.findIndex(line => line.match(/^import/))
+          break
+          case 'afterContent':
+          lastImportIndex = lines.length - 1
+          break
+          default:
+          lastImportIndex = lines.findIndex(line => line.match(/^import/))
+      }
+      
         if(Array.isArray(ctx)){
             ctx.forEach(line => {
                 lines[lastImportIndex] += `\n${line}`

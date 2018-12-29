@@ -14,6 +14,7 @@ export default {
     /* global vm */
     vm.$auth.fetch({ ...vm.$auth.options.fetchData })
   },
+  <% if(platform == 'wechat') { %>
   //获取微信授权登录地址（不可删除）
   getAuthorizationUrl(ctx, data) {
     //data: {url:'***'} url为授权成功后的回跳地址
@@ -34,14 +35,9 @@ export default {
       return response.data;
     });
   },
+  <% } %>
   //获取手机验证码（不可删除）
   getCode(ctx, data) {
     return fetch.getCode(data);
-  },
-  //获取uaa信息
-  getUaaInfo(ctx) {
-    return fetch.getUaaInfo().then(response => {
-      return response.data;
-    });
   },
 };

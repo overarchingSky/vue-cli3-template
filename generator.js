@@ -10,6 +10,11 @@ childProcess.spawnSync('cnpm',['install'],{
 
 const {pluginTool} = require('vue-cli-helper-utils')
 module.exports = (api, options, rootOptions) => {
+
+    if(options.useAuth !== false){
+      options.useAuth = true
+    }
+
     let plugin = new pluginTool(api,options,rootOptions)
     // 修改 `package.json` 里的字段
     api.extendPackage({
@@ -35,16 +40,21 @@ module.exports = (api, options, rootOptions) => {
     })
     
     // 复制并用 ejs 渲染 `./template` 内所有的文件
+
     api.render('./template',options)
 
-    if(options.useAuth !== false){
+    if(options.useAuth){
       //安装vue-auth插件
-      plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.3")
+      plugin.invoke('vue-cli-plugin-wingedcare-template-auth',"^0.0.5")
     }
     
     if(options.useSparseCheckout){
       //集成sparse-checkout工具到npm script
       plugin.invoke('vue-cli-plugin-wingedcare-template-sparse-checkout','^0.0.5')
+    }
+
+    if(options.useWtUi){
+      //添加wt-ui组件库
     }
 
     switch(options.platform){
@@ -54,7 +64,7 @@ module.exports = (api, options, rootOptions) => {
         break;
       case 'wechat':
         //这里没有使用break; 是为了同时安装wingedcarea-vue-template-wechat和wingedcarea-vue-template-mobile插件
-        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.13")
+        plugin.invoke('vue-cli-plugin-wingedcare-template-wechat',"^0.0.15")
       case 'mobile':
         //安装wingedcarea-vue-template-mobile插件
         plugin.invoke('vue-cli-plugin-wingedcare-template-mobile',"^0.0.23")

@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-wingedcare-template-auth",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "wingedcare-template模板auth模块",
   "repository": {
     "type": "git",

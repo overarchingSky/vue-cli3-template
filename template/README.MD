@@ -74,7 +74,37 @@ npm run new:comp
 }
 ```
 
-### ✨ 拉去wt-ui组件
+### ✨ 隔代组件通信
+
+为了避免隔代组件之间通信的繁琐流程，我们加入了mixins/emmiter.js，提供了dispatch和broadcast方法，开发中如有需求，可使用  
+但使用该方式，会造成事件流难以追踪，所以务必写好注释，例如：  
+```               
+A-----(监听B组件update事件)----->B-----(B组件引入了C组件作为其子组件)----->C
+```
+在上诉流程中，C组件使用emmiter.js中的dispatch方法代B组件向上抛出了update事件，从而触发了A组建中的时间回调方法  
+
+在这过程中，B组件对update事件是无感知的，不知情的，小伙伴们由于惯性思维，会根据A组件去B组件中寻找this.$emit('update',***)等代码，然而是找不到的，由此带来不必要的困惑，所以务必在B组件中写好注释，声明update事件的触发源！  
+
+想想下，如果上述流程是从A到B到C一直到Z，中间还穿插了各种分支，然后Z中触发了update事件，o(╥﹏╥)o，这将是一场灾难!
+
+<(‵"′)> ，为了维护世界的和平，so...
+
+### ✨ 变量类型判断
+
+为了更精准的类型判断，统一使用src/utils/typeof.js中提供的[方法](https://github.com/overarchingSky/vue-cli3-template/blob/master/template/src/utils/typeof.js)  
+
+在main.js中，已经全局引入并将其挂在到window._中，业务组件中可直接这样使用：
+```
+_.isArray()
+```
+
+需要注意的是，由于使用了全局变量，eslint对上诉代码的检测会失败，抛出使用了未定义变量的错误，所以，需要在使用前加上如下注释告知eslint这里为全局变量
+```
+/* global _ */
+_.isArray()
+```
+
+### ✨ 拉取wt-ui组件
 
 ```
 npm run pull:comp
@@ -114,6 +144,8 @@ CSS预处理语言统一使用`less`
 
 ##### 通用样式：`src/less/`
 
+##### 平台代码：`src/platform`
+
 ##### 工具：`src/utils`
 
 ##### 页面布局框架：`src/layout`
@@ -128,6 +160,8 @@ CSS预处理语言统一使用`less`
 
 ##### vue混入片段：`src/mixins`
 
+##### 通用页面(如正在开发中)：`src/template`
+
 ## 环境变量
 
 - 基础配置: .env
@@ -140,5 +174,14 @@ CSS预处理语言统一使用`less`
 
 如需更改vue-loader或webpack等配置，请参考[vue-cli3](https://cli.vuejs.org/zh/guide/)
 
+## 新建其它项目
 
+如有其它端项目需求，在全局安装vue-cli3的前提下，使用如下命令生成模板项目
+```
+vue create --preset overarchingSky/vue-cli3-template {项目本地路径} 
+```
+
+该命令会询问一些问题，可根据情况选择
+
+关于[overarchingSky/vue-cli3-template](https://github.com/overarchingSky/vue-cli3-template)
 
